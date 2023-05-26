@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Contacto</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+   <script src="https://kit.fontawesome.com/1288317f82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header class="header">
+       <div class="contenedor">
+           <div class="barra">
+               <a class="logo" href="index.html">
+                   <h1 class="logo__nombre no-margin centrar-texto">Colegio<span class="logo__bold">Proyecto</span></h1>
+               </a>
+               <nav class="navegacion">
+                <a href="index.html" class="navegacion__enlace">Inicio</a>
+                <a href="nosotros.html" class="navegacion__enlace">Sobre Nosotros</a>
+                <a href="novedades.html" class="navegacion__enlace">Noticias</a>
+                <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                <a href="sesion.html"><i class="fa-regular fa-user" style="color: #e6ffff;"></i></a>
+            </nav>
+           </div>
+       </div>
+   </header>
+
+   <main class="contenedor">
+       <h3 class="centrar-texto">Contacto</h3>
+
+    <div class="contacto-bg"></div>
+
+    <form class="formulario" action="https://formspree.io/f/myyalawz" method="POST">
+        <div class="campo">
+            <label class="campo__label" for="nombre"><em>Nombre</em></label>
+            <input 
+            class="campo__field" 
+            type="text" 
+            placeholder="Tu Nombre"
+            name= "Tu Nombre"
+            id="nombre"
+            required
+            >
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="email"> <em>E-mail</em></label>
+            <input 
+            class="campo__field"
+            type="email" 
+            placeholder="Tu Email" 
+            id="email"
+            required
+            >
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="nombre"> <em>Mensaje</em></label>
+            <textarea 
+            class="campo__field campo__field--textarea"
+            id="mensaje"
+            ></textarea>
+        </div>
+        <div class="campo">
+            <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
+    </form>
+       
+       
+
+   </main>
+
+   <footer class="footer">
+    <div class="contenedor">
+        <div class="barra">
+            <img src="img/escudo colegio blanco.png" alt="Logo colegio" height="20px" width="15px">
+            <p>NombreColegio</p>
+            <nav class="navegacion">
+                    <ul>
+                        <h4>Sigamos juntos</h4>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a> <br>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a> <br>
+                    </ul>
+            </nav>
+            <div>
+                <h4>Contacto</h4>
+                <p>
+                    Tel: 11-00000000 <br>
+                    nombrecolegio@gmail.com <br>
+                </p>
+            </div>
+            <div>
+                <h4>Dirección</h4>
+                <p>
+                    <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6861206,-58.7289028,10z/data=!4m6!3m5!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591!16zL20vMDFseTVt?hl=es"
+                    target="_blank"><b>Nombre Colegio</b></a>
+                    - Dirección 000 <br>
+                    Buenos Aires - Argentina <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+   <script src="js/modernizr.js"></script>
+</body>
+</html>

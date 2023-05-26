@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Noticias</title>
+    <meta name="description" content="Página web de colegio">
+
+
+    <!-- PREFETCH -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- PRELOAD -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src="https://kit.fontawesome.com/1288317f82.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Colegio<span class="logo__bold">Proyecto</span>
+                    </h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace">Inicio</a>
+                    <a href="nosotros.html" class="navegacion__enlace">Sobre Nosotros</a>
+                    <a href="novedades.html" class="navegacion__enlace">Noticias</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="sesion.html"><i class="fa-regular fa-user" style="color: #e6ffff;"></i></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="noticias">
+            <h2>Noticias</h2>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/deporte.webp" type="image/webp">
+                        <img loading="lazy" src="img/deporte.jpg" alt="imagen deporte">
+                    </picture>
+                </div>
+
+                <div class="entrada__contendio">
+                    <h4 class="no-margin">Día de las <em>Infancias</em></h4>
+                    <p>Como todos los años en ambas sedes se festejó el día del niño, que desde el año 2020 se denomina
+                        día de las infancias y se celebra en Argentina el tercer domingo de agosto.
+                    </p>
+                    <a href="infancia.html" class="boton boton--primario">Leer Noticia</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/sembrando.webp" type="image/webp">
+                        <img loading="lazy" src="img/sembrando.jpg" alt="imagen Sembrando">
+                    </picture>
+                </div>
+
+                <div class="entrada__contendio">
+                    <h4 class="no-margin">Sembrando a <em>Futuro</em></h4>
+                    <p>¨Sembrando a futuro¨ es el proyecto del Área de Ciencias de la Escuela Primaria para alumnos de
+                        5° año.
+                    </p>
+                    <a href="sembrando.html" class="boton boton--primario">Leer Noticia</a>
+                </div>
+            </article>
+
+        </main>
+        <aside class="sidebar">
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin"> <br><br><br> Olimpíada <em>Nacional de Biología</em></h4>
+                    <p class="widget-curso__label">El año pasado,
+                        <span class="widget-curso__info">luego de obtener una mención de Honor en la Olimpíada Nacional
+                            de Biología, nuestras alumnas fueron pre-seleccionadas para la Olimpíada Internacional de
+                            Biología.</span>
+                    </p>
+
+                    <a href="olimpiada.html" class="boton boton--primario">Más Información sobre Olimpíada</a>
+                </li>
+            </ul>
+
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <img src="img/escudo colegio blanco.png" alt="Logo colegio" height="20px" width="15px">
+                <p>NombreColegio</p>
+                <nav class="navegacion">
+                        <ul>
+                            <h4>Sigamos juntos</h4>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a> <br>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a> <br>
+                        </ul>
+                </nav>
+                <div>
+                    <h4>Contacto</h4>
+                    <p>
+                        Tel: 11-00000000 <br>
+                        nombrecolegio@gmail.com <br>
+                    </p>
+                </div>
+                <div>
+                    <h4>Dirección</h4>
+                    <p>
+                        <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6861206,-58.7289028,10z/data=!4m6!3m5!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591!16zL20vMDFseTVt?hl=es"
+                        target="_blank"><b>Nombre Colegio</b></a>
+                        - Dirección 000 <br>
+                        Buenos Aires - Argentina <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+</body>
+
+</html>
